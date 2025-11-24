@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; max-width:900px; margin: 2rem auto; padding: 0 1rem; line-height:1.6; }
+header h1 { margin:0; }
+a { text-decoration:none; }
+article { border-bottom:1px solid #ddd; padding:1rem 0; }
