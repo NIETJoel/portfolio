@@ -1,45 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Portfolio — Jouw Naam</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Jouw Naam</h1>
-    <p>Beginnend software developer — interesse in web & backend</p>
-    <p><a href="https://github.com/USERNAME">GitHub</a> • <a href="#projects">Projecten</a></p>
-  </header>
 
-  <main id="projects">
-    <section>
-      <h2>Projecten</h2>
+<header>
+    <h1>Mijn Portfolio</h1>
+    <p>Welkom op mijn portfolio website!</p>
+</header>
 
-      <article>
-        <h3>Project 1 — Takenlijst (CRUD)</h3>
-        <p>Korte beschrijving: een simpele takenlijst met create/read/update/delete.</p>
-        <p>Technologieën: HTML, CSS, JavaScript, Firebase</p>
-        <p><a href="https://github.com/USERNAME/project-1">Code op GitHub</a> • <a href="#">Live demo</a></p>
-      </article>
+<main>
+    <section id="projecten">
+        <h2>Projecten</h2>
 
-      <!-- Voeg meer projecten toe -->
+        <div class="project-card">
+            <h3>CRUD Challenge</h3>
+            <p>Een CRUD-applicatie waar je studenten en hun te-laat-registraties beheert gemaakt in php.</p>
+            <a href="projecten.html">Bekijk project →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Project</h3>
+            <p>Mijn eigen portfolio website die ik zelf gebouwd heb.</p>
+            <a href="projecten1.html">Bekijk project →</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Yii Challenge</h3>
+            <p>Een CRUD-applicatie waar je studenten en hun te-laat-registraties beheert gemaakt in yii.</p>
+            <a href="projecten2.html">Bekijk project →</a>
+        </div>
+
     </section>
+</main>
 
-    <section>
-      <h2>Over mij</h2>
-      <p>Korte reflectie: wat je geleerd hebt, wat je wilt verbeteren.</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: jouremail@example.com</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© Jouw Naam — Portfolio</p>
-  </footer>
 </body>
 </html>
