@@ -9,47 +9,73 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+            background: linear-gradient(180deg, #0a1a33, #1e3c72, #4a7bd0);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding-top: 40px;
         }
-        header {
-            background: #222;
-            color: white;
-            padding: 2rem;
+
+        .container {
             text-align: center;
-        }
-        main {
+            width: 100%;
             max-width: 900px;
-            margin: auto;
-            padding: 2rem;
         }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            opacity: 0.9;
+        }
+
+        .projects {
+            margin-top: 3rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            backdrop-filter: blur(6px);
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
         a {
-            color: #0066cc;
+            color: #ffd700;
+            font-weight: bold;
             text-decoration: none;
         }
-        .project-card {
-            background: white;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-<header>
+<div class="container">
+
     <h1>Mijn Portfolio</h1>
     <p>Welkom op mijn portfolio website!</p>
-</header>
 
-<main>
-    <section id="projecten">
-        <h2>Projecten</h2>
+    <section class="projects">
 
         <div class="project-card">
             <h3>CRUD Challenge</h3>
-            <p>Een CRUD-applicatie waar je studenten en hun te-laat-registraties beheert gemaakt in php.</p>
+            <p>Een CRUD-applicatie waar je studenten en hun te-laat-registraties beheert gemaakt in PHP.</p>
             <a href="projecten.html">Bekijk project →</a>
         </div>
 
@@ -61,12 +87,13 @@
 
         <div class="project-card">
             <h3>Yii Challenge</h3>
-            <p>Een CRUD-applicatie waar je studenten en hun te-laat-registraties beheert gemaakt in yii.</p>
+            <p>Een CRUD-applicatie waar je studenten en hun te-laat-registraties beheert gemaakt in Yii.</p>
             <a href="projecten2.html">Bekijk project →</a>
         </div>
 
     </section>
-</main>
+
+</div>
 
 </body>
 </html>
